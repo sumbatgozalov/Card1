@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  font-family: "Inter", sans-serif;
+
+  background-color: hsl(233, 47%, 7%);
+}
+.container {
+  width: 80%;
+  background-color: hsl(244, 38%, 16%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+  height: 60%;
+  display: flex;
+  overflow: hidden;
+}
+
+.left {
+  flex: 50%;
+  padding: 5%;
+}
+/* .left {
+} */
+.textup {
+  height: 50%;
+}
+.textup h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 100%);
+}
+.textup h4 {
+  margin-top: 5%;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.span {
+  display: inline;
+  color: hsl(277, 64%, 61%);
+  font-size: inherit;
+}
+.textbottom {
+  display: flex;
+  flex-direction: row;
+}
+.textbottom ul {
+  font-size: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.textbottom ul li {
+  padding-top: 40%;
+  color: hsl(0, 0%, 100%);
+  text-align: left;
+  margin-right: 25%;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+span {
+  margin-top: 5%;
+  display: block;
+  font-size: 0.9rem;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: "Inter", sans-serif;
+  text-align: left;
+  letter-spacing: 2px;
+}
+.right {
+  flex: 50%;
+  background: url(./images/image-header-desktop.jpg);
+  background-size: cover;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277, 64%, 61%);
+  opacity: 0.5;
+}
+
+@media all and (max-width: 600px) {
+  .container {
+    height: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .right {
+    background-image: url(./images/image-header-mobile.jpg);
+  }
+  .left {
+    /* height: 70%; */
+    background-size: cover;
+    padding: 10%;
+  }
+
+  .textup h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .textup h4 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .textbottom {
+    display: flex;
+    justify-content: center;
+  }
+  .textbottom ul {
+    flex-direction: column;
+  }
+  .textbottom ul li {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    text-align: center;
+    align-items: center;
+  }
+  span {
+    font-size: 0.7rem;
+  }
+}
